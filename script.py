@@ -6,7 +6,7 @@ import os.path
 d = os.getcwd()
 for root, dirs, files in os.walk(d):
     for file in files:
-        if file.endswith('.htm'):
+        if file.endswith('.htm') or file.endswith('.html'):
 
             filei = str(file)
             with open(filei, encoding="utf8") as f:
